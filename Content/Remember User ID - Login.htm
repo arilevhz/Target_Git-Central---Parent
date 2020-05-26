@@ -4,7 +4,8 @@
     </head>
     <body>
         <h1 class="h1.">
-            <MadCap:concept term="Topics" />Login</h1>
+            <MadCap:concept term="Topics" /><span style="font-weight: normal;">Login</span>
+        </h1>
         <p class="Body" style="font-style: italic;">When a user first logs in to <MadCap:variable name="General.ProductName" /> (or if the security token has expired or if they are accessing <MadCap:variable name="General.ProductName" /> from a non-specified IP address such as a VPN), they will see the normal login page and will be required to authenticate with <MadCap:variable name="General.ProductName" />.  If using LDAP authentication then this authentication might in turn be delegated to LDAP.</p>
         <p class="Body" style="font-style: italic;">If the user is accessing from an IP address defined in the WEBRIPS list, then if they log in to <MadCap:variable name="General.ProductName" /> successfully, a security token will be built and encrypted, and stored on the user's browser as local storage data.</p>
         <p class="Body" style="font-style: italic;">The next time they request the login page (on the same computer and browser, and from an IP address specified in WEBRIPS), <MadCap:variable name="General.ProductName" /> checks this security token, and if it is valid the user will be allowed access to <MadCap:variable name="General.ProductName" /> without further authentication.</p>
